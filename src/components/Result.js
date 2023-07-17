@@ -3,11 +3,20 @@ import '../styles/result.css'
 import {Link} from 'react-router-dom'
 
 import ResultTable from './ResultTable'
+import { useDispatch } from 'react-redux'
 
-const Result = () => {
+/** */
+import { resetAllAction } from '../redux/questionReducer'
+import { resetResultAction } from '../redux/resultReducer'
+
+
+export default function Resultn() {
+
+    const dispatch = useDispatch()
 
     function onRestart() {
-        console.log('on Restart')
+        dispatch(resetAllAction())
+        dispatch(resetResultAction())
     }
   return (
     <div className="container">
@@ -56,4 +65,3 @@ const Result = () => {
   )
 }
 
-export default Result
