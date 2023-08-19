@@ -26,14 +26,14 @@ export default function ResultTable() {
             <tbody>
                 { !data ?? <div> No Data Found </div>}
                 {
-                    data.map((v, i) => {
+                    data.map((v, i) => (
                         <tr className='table-body' key={i}>
                             <td> {v?.username || ''} </td>
                             <td> {v?.attempts || 0} </td>
                             <td> {v?.points || 0} </td>
                             <td> {v?.achieved || ''} </td>
                         </tr>
-                        })
+                    ))
                 }
             </tbody>
         </table>
