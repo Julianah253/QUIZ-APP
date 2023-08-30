@@ -15,7 +15,8 @@ import { usePublishResult } from '../hooks/setResult'
 export default function Result() {
 
     const dispatch = useDispatch()
-    const { questions : {queue, answers}, result : {result, userId}} = useSelector(state => state)
+    const { questions: { queue, answers } } = useSelector(state => state);
+    const { result: { result, userId } } = useSelector(state => state);
 
     // useEffect(() => {
     //     console.log(flag)
