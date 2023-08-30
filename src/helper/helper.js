@@ -3,7 +3,10 @@ import { Navigate } from "react-router-dom";
 import axios from 'axios';
 
 export function attempts_Number(result){
-    return result.filter(r => r !== undefined).length;
+    if (result) {
+        return result.filter(r => r !== undefined).length;
+    }
+    // Handle the case where result is undefined
 }
 
 export function earnpoints_Number(result, answers, point){
