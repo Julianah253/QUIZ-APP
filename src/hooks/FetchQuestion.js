@@ -33,7 +33,7 @@ export const useFetchQuestion = () => {
                 }
             } catch (error) {
                 setGetData(prev => ({...prev, isLoading: false}));
-                setGetData(prev => ({...prev, serverError: error}));
+                setGetData(prev => ({...prev, serverError: error.message}));
             }
         })();
     }, [dispatch]);

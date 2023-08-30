@@ -11,7 +11,7 @@ export function earnpoints_Number(result, answers, point){
 }
 
 export function flagResult(totalPoints, earnPoints){
-    return  earnPoints > (totalPoints * 50 /100 ); /** earn 50% marks */
+    return  earnPoints > (totalPoints * 0.5 ); /** earn 50% marks */
 }
 
 /** check user auth */
