@@ -334,3 +334,57 @@ header h1 {
     transform: translateY(0);
   }
 }
+
+@media only screen and (max-width: 799px) {
+
+  header h1{
+    font-size: 25px;
+  }
+  #summary h2{
+    font-size: 20px;
+  }
+
+  #summary-stats {
+    width: 100%;
+    gap: 1rem;
+    margin: 2rem auto;
+    transform: translateX(-10px);
+  }
+
+  #summary-stats .number {
+    font-size: 1.5rem;
+  }
+
+  #summary-stats .text {
+    font-size: 0.7rem;
+    letter-spacing: 0;
+  }
+
+  #summary-stats p{
+    gap: 0.9rem;
+  }
+
+  #summary .question{
+    font-size: 14px;
+  }
+
+  #summary .user-answer{
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 393px) and (max-width: 850px) {
+  #summary-stats {
+    width: 100%;
+    gap: 1rem;
+    margin: 2rem auto;
+    transform: translateX(-2px);
+  }
+}
+
+@media only screen and (min-width: 390px) and (max-width: 843px){
+  #summary-stats p{
+    gap: 0.9rem;
+    transform: translateX(7px);
+  }
+}
